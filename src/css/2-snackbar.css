@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 360px;
+  padding: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 8px;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type='number']:focus {
+  border-color: #4e75ff;
+}
+fieldset {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+
+legend {
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+button[type='submit'] {
+  padding: 10px 16px;
+  width: fit-content;
+  background-color: #ffffff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type='submit']:hover {
+  background-color: #4e75ff;
+  color: #fff;
+  border-color: #4e75ff;
+}

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.container-btn-calend {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  margin: 200px auto 24px;
+}
+#datetime-picker {
+  display: block;
+  border: 1px solid rgba(12, 12, 12, 0.2);
+  border-radius: 5px;
+  padding: 16px 18px;
+  width: 500px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  outline: none;
+  transition: border-color 250ms ease-in-out;
+  cursor: pointer;
+}
+#datetime-picker:focus {
+  border-color: #0e0e0e;
+}
+.button {
+  background-color: #bdbfcd;
+  border-radius: 5px;
+  padding: 17px 24px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.29;
+  text-align: center;
+  border: 1px solid rgba(12, 12, 12, 0.5);
+  box-shadow: #bdbfcd;
+  color: #080808;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+.button:is(:hover, :focus) {
+  background-color: #576999;
+  color: white;
+}
+.button:disabled {
+  background-color: #cdd0d7;
+  color: #080808;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 724px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field {
+  width: calc((100% - 36px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.value {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.29;
+}
+.label {
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 1.29;
+}
